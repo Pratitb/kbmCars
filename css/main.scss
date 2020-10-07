@@ -4,6 +4,9 @@
 @import "brands";
 @import "reviews";
 @import "process";
+@import "cars";
+@import "about";
+@import "footer";
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 *{
@@ -25,4 +28,17 @@ body{
 }
 .whatsapp-button i{
     color: #07ae5d;
+}
+.top-button{
+    position: fixed;
+    visibility: hidden;
+    z-index: 100;
+    bottom: 1em;
+    right: 0.5em;
+    font-size: 4em;
+    cursor: pointer;
+
+    i{
+        color: #006c38;
+    }
 }

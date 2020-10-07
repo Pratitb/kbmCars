@@ -48,9 +48,15 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #d4a50d;
+  color: #F9A826;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px #d4a50d;
+  -webkit-text-stroke: 2px #F9A826;
+}
+
+@media (max-width: 767px) {
+  header {
+    display: none;
+  }
 }
 
 #home {
@@ -90,9 +96,9 @@ header .logo {
 
 #home .banner-content h2 span {
   text-transform: uppercase;
-  color: #d4a50d;
+  color: #F9A826;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #d4a50d;
+  -webkit-text-stroke: 1px #F9A826;
 }
 
 #home .banner-content a {
@@ -173,6 +179,8 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 5em 5em;
   background: #000;
 }
@@ -191,6 +199,8 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: #fff;
 }
 
@@ -216,9 +226,9 @@ header .logo {
 }
 
 #reviews .reviews-content h1 .number {
-  color: #d4a50d;
+  color: #F9A826;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px #d4a50d;
+  -webkit-text-stroke: 2px #F9A826;
 }
 
 #reviews .reviews-content p {
@@ -265,6 +275,8 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #reviews .cards {
@@ -281,7 +293,7 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #d4a50d;
+  background-color: #F9A826;
   min-height: 300px;
   max-width: 300px;
   padding: 1em;
@@ -344,13 +356,15 @@ header .logo {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background: #efefef;
 }
 
 #process .heading {
   text-align: center;
   font-size: 3.5em;
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
 }
 
 #process .process-content {
@@ -364,6 +378,8 @@ header .logo {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #process .process-content .step {
@@ -393,7 +409,7 @@ header .logo {
 }
 
 #process .process-content .quality-icons .icon:nth-child(even) {
-  color: #d4a50d;
+  color: #F9A826;
 }
 
 #process .process-content .quality-icons .icon:nth-child(odd) {
@@ -418,7 +434,7 @@ header .logo {
 }
 
 #process .step:nth-child(even) h2 {
-  background: #d4a50d;
+  background: #F9A826;
 }
 
 #process .step:nth-child(odd) h2 {
@@ -446,9 +462,175 @@ header .logo {
   border-radius: 5em;
 }
 
-#process .step h2.active {
-  background: #d4af0d;
+#cars {
+  padding: 5em 5em;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cars .cars-content {
+  max-width: 400px;
+}
+
+#cars .cars-content small {
+  color: #f9a826;
+}
+
+#cars .cars-content h1 {
+  font-size: 4em;
+}
+
+#cars .cars-content p {
+  letter-spacing: 1px;
+}
+
+#cars .cars-content .car-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3em;
+}
+
+#cars .cars-content .car-buttons a {
+  text-decoration: none;
   color: #000;
+  border: 2px solid #000;
+  padding: 0.5em;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+#cars .cars-content .car-buttons a:hover {
+  color: #fff;
+  background: #000;
+}
+
+#cars .owl-carousel {
+  max-width: 400px;
+}
+
+#cars .owl-carousel .owl-stage-outer {
+  border-radius: 1em;
+}
+
+#cars .owl-carousel .owl-nav [class*="owl-"] {
+  display: none;
+}
+
+#cars .owl-carousel .owl-nav [class*="owl-"]:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+#about {
+  padding: 5em 5em;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000;
+  background: #fff;
+}
+
+#about .heading {
+  font-size: 3.5em;
+  text-align: center;
+  margin: 1em 0;
+}
+
+#about .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#about .about-content .about-content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 600px;
+}
+
+#about .about-content .about-content-text h2 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+#about .about-content .about-content-text p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+}
+
+#about .about-content .about-creative {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+  min-height: 5vh;
+  padding: 1em;
+  color: #fff;
 }
 
 * {
@@ -474,5 +656,19 @@ body {
 
 .whatsapp-button i {
   color: #07ae5d;
+}
+
+.top-button {
+  position: fixed;
+  visibility: hidden;
+  z-index: 100;
+  bottom: 1em;
+  right: 0.5em;
+  font-size: 4em;
+  cursor: pointer;
+}
+
+.top-button i {
+  color: #006c38;
 }
 /*# sourceMappingURL=main.css.map */

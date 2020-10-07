@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: $section-padding;
     background: #000;
 
@@ -12,6 +13,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: row;
+        flex-wrap: wrap;
         color: #fff;
         .lines{
             display: flex;
@@ -23,9 +25,9 @@
         h1{
             font-size: 3.5em;
             .number{
-                color: #d4a50d;
+                color: #F9A826;
                 -webkit-text-fill-color: transparent;
-                -webkit-text-stroke: 2px #d4a50d;
+                -webkit-text-stroke: 2px #F9A826;
             }
         }
         p{
@@ -53,13 +55,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
     .cards{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        background-color: #d4a50d;
+        background-color: #F9A826;
         min-height: 300px;
         max-width: 300px;
         padding: 1em;

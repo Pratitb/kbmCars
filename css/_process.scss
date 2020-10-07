@@ -4,19 +4,20 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+    flex-wrap: wrap;
     
     background: #efefef;
 
     .heading{
         text-align: center;
         font-size: 3.5em;
-        margin-bottom: 1.5em;
+        margin: 1.5em 0;
     }
     .process-content{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         .step{
             flex-basis: 40%;
         }
@@ -28,10 +29,11 @@
             align-content: space-evenly;
             flex-basis: 40%;
             
+            
             .icon{
                 flex-basis: 20%;
                 &:nth-child(even){
-                    color: #d4a50d;
+                    color: #F9A826;
                 }
                 &:nth-child(odd){
                     color: rgba(0,0,0,0.7);
@@ -47,7 +49,7 @@
         margin-bottom: 3em;
 
         &:nth-child(even) h2{
-            background: #d4a50d;
+            background: #F9A826;
         }
         &:nth-child(odd) h2{
             background: #000000b3;
@@ -78,9 +80,6 @@
             padding: 1em;
             border-radius: 5em;
         }
-        h2.active{
-            background: #d4af0d;
-            color: #000;
-        }
+        
     }
 }

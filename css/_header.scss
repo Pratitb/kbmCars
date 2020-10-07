@@ -29,8 +29,11 @@ header{
         font-size: 1.5em;
         letter-spacing: 0.4em;
         align-items: center;
-        color: #d4a50d;
+        color: #F9A826;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 2px #d4a50d;
+        -webkit-text-stroke: 2px #F9A826;
+    }
+    @media(max-width:767px){
+        display: none;
     }
 }
