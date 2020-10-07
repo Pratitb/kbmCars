@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: black;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+header li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 1em;
+  margin-left: 2em;
+  font-size: 1.2em;
+}
+
+header li a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+header li a.nav-links:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+header .logo {
+  font-size: 1.5em;
+  letter-spacing: 0.4em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #d4a50d;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #d4a50d;
+}
+
+#home {
+  padding: 5em 5em;
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../resources/banner-image-03.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../resources/banner-image-03.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .banner-content h1, #home .banner-content h2 {
+  color: #fff;
+}
+
+#home .banner-content h1 {
+  font-size: 3.5em;
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+  max-width: 500px;
+}
+
+#home .banner-content h2 {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+#home .banner-content h2 span {
+  text-transform: uppercase;
+  color: #d4a50d;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #d4a50d;
+}
+
+#home .banner-content a {
+  position: absolute;
+  font-size: 1.4em;
+  padding: 0.8em;
+  margin-top: 1em;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+#home .banner-content a:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+#brands {
+  padding: 5em 5em;
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#brands h1 {
+  font-size: 3.5em;
+}
+
+#brands p {
+  cursor: default;
+}
+
+#brands .brand-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1025px;
+  margin: 5em 0em;
+}
+
+#reviews {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5em 5em;
+  background: #000;
+}
+
+#reviews .reviews-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff;
+}
+
+#reviews .reviews-content .lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 5em;
+}
+
+#reviews .reviews-content h1 {
+  font-size: 3.5em;
+}
+
+#reviews .reviews-content h1 .number {
+  color: #d4a50d;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #d4a50d;
+}
+
+#reviews .reviews-content p {
+  font-size: 2em;
+}
+
+#reviews .reviews-content .factors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#reviews .reviews-content .factor-01, #reviews .reviews-content .factor-02, #reviews .reviews-content .factor-03 {
+  background: #fff;
+  color: #000;
+  border-radius: 5em;
+  padding: 1.2em;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+#reviews .reviews-content .factor-01 i, #reviews .reviews-content .factor-02 i, #reviews .reviews-content .factor-03 i {
+  margin-right: 1em;
+}
+
+#reviews .cards-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#reviews .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #d4a50d;
+  min-height: 300px;
+  max-width: 300px;
+  padding: 1em;
+  margin: 5em 1em;
+  border-radius: 5%;
+}
+
+#reviews .cards .customer-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#reviews .cards .customer-image img {
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+#reviews .cards .customer-image h1 {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+#reviews .cards .customer-image p {
+  font-size: 0.8em;
+  letter-spacing: 0.8px;
+}
+
+#reviews .cards .customer-details {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#reviews .cards .customer-details p {
+  color: #ffeaa4;
+}
+
+#process {
+  min-height: 100vh;
+  padding: 5em 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #efefef;
+}
+
+#process .heading {
+  text-align: center;
+  font-size: 3.5em;
+  margin-bottom: 1.5em;
+}
+
+#process .process-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#process .process-content .step {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+#process .process-content .quality-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+#process .process-content .quality-icons .icon {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+#process .process-content .quality-icons .icon:nth-child(even) {
+  color: #d4a50d;
+}
+
+#process .process-content .quality-icons .icon:nth-child(odd) {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#process .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 3em;
+}
+
+#process .step:nth-child(even) h2 {
+  background: #d4a50d;
+}
+
+#process .step:nth-child(odd) h2 {
+  background: #000000b3;
+  color: #fff;
+}
+
+#process .step h1, #process .step h2 {
+  background: #fff;
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+
+#process .step h1 {
+  margin-right: 1em;
+  border-radius: 50%;
+  font-size: 1.3em;
+  padding: 0.6em;
+}
+
+#process .step h2 {
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  padding: 1em;
+  border-radius: 5em;
+}
+
+#process .step h2.active {
+  background: #d4af0d;
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Audiowide', cursive;
+}
+
+.whatsapp-button {
+  position: fixed;
+  visibility: hidden;
+  z-index: 100;
+  bottom: 1em;
+  right: 2em;
+  font-size: 4em;
+}
+
+.whatsapp-button i {
+  color: #07ae5d;
+}
+/*# sourceMappingURL=main.css.map */

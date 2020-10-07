@@ -1,0 +1,28 @@
+@import "variables";
+@import "header";
+@import "banner";
+@import "brands";
+@import "reviews";
+@import "process";
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Audiowide', cursive;
+}
+.whatsapp-button{
+    position: fixed;
+    visibility: hidden;
+    z-index: 100;
+    bottom: 1em;
+    right: 2em;
+    font-size: 4em;
+}
+.whatsapp-button i{
+    color: #07ae5d;
+}
