@@ -48,9 +48,9 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #F9A826;
+  color: #f9a826;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px #F9A826;
+  -webkit-text-stroke: 2px #f9a826;
 }
 
 @media (max-width: 767px) {
@@ -63,10 +63,11 @@ header .logo {
   padding: 5em 5em;
   height: 100vh;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/banner-image-01.jpg);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner-image-01.jpg);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/banner-image-05.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner-image-05.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,6 +77,8 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #home .banner-content h1, #home .banner-content h2 {
@@ -96,9 +99,9 @@ header .logo {
 
 #home .banner-content h2 span {
   text-transform: uppercase;
-  color: #F9A826;
+  color: #f9a826;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #F9A826;
+  -webkit-text-stroke: 1px #f9a826;
 }
 
 #home .banner-content a {
@@ -138,10 +141,6 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#brands h1 {
-  font-size: 3.5em;
 }
 
 #brands p {
@@ -226,9 +225,9 @@ header .logo {
 }
 
 #reviews .reviews-content h1 .number {
-  color: #F9A826;
+  color: #f9a826;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px #F9A826;
+  -webkit-text-stroke: 2px #f9a826;
 }
 
 #reviews .reviews-content p {
@@ -251,7 +250,9 @@ header .logo {
           flex-direction: column;
 }
 
-#reviews .reviews-content .factor-01, #reviews .reviews-content .factor-02, #reviews .reviews-content .factor-03 {
+#reviews .reviews-content .factor-01,
+#reviews .reviews-content .factor-02,
+#reviews .reviews-content .factor-03 {
   background: #fff;
   color: #000;
   border-radius: 5em;
@@ -261,7 +262,9 @@ header .logo {
           box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-#reviews .reviews-content .factor-01 i, #reviews .reviews-content .factor-02 i, #reviews .reviews-content .factor-03 i {
+#reviews .reviews-content .factor-01 i,
+#reviews .reviews-content .factor-02 i,
+#reviews .reviews-content .factor-03 i {
   margin-right: 1em;
 }
 
@@ -279,7 +282,7 @@ header .logo {
       flex-wrap: wrap;
 }
 
-#reviews .cards {
+#reviews .cards-wrap .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,7 +296,7 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #F9A826;
+  background-color: #f9a826;
   min-height: 300px;
   max-width: 300px;
   padding: 1em;
@@ -301,7 +304,7 @@ header .logo {
   border-radius: 5%;
 }
 
-#reviews .cards .customer-image {
+#reviews .cards-wrap .cards .customer-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,29 +320,29 @@ header .logo {
           flex-direction: row;
 }
 
-#reviews .cards .customer-image img {
+#reviews .cards-wrap .cards .customer-image img {
   border-radius: 50%;
   margin-right: 0.5em;
 }
 
-#reviews .cards .customer-image h1 {
+#reviews .cards-wrap .cards .customer-image h1 {
   font-size: 0.9em;
   letter-spacing: 1px;
 }
 
-#reviews .cards .customer-image p {
+#reviews .cards-wrap .cards .customer-image p {
   font-size: 0.8em;
   letter-spacing: 0.8px;
 }
 
-#reviews .cards .customer-details {
+#reviews .cards-wrap .cards .customer-details {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-#reviews .cards .customer-details p {
+#reviews .cards-wrap .cards .customer-details p {
   color: #ffeaa4;
 }
 
@@ -353,18 +356,12 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: #efefef;
-}
-
-#process .heading {
-  text-align: center;
-  font-size: 3.5em;
-  margin: 1.5em 0;
 }
 
 #process .process-content {
@@ -409,7 +406,7 @@ header .logo {
 }
 
 #process .process-content .quality-icons .icon:nth-child(even) {
-  color: #F9A826;
+  color: #f9a826;
 }
 
 #process .process-content .quality-icons .icon:nth-child(odd) {
@@ -434,7 +431,7 @@ header .logo {
 }
 
 #process .step:nth-child(even) h2 {
-  background: #F9A826;
+  background: #f9a826;
 }
 
 #process .step:nth-child(odd) h2 {
@@ -474,6 +471,8 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #cars .cars-content {
@@ -549,14 +548,14 @@ header .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: #000;
   background: #fff;
 }
 
-#about .heading {
-  font-size: 3.5em;
-  text-align: center;
-  margin: 1em 0;
+#about h1 {
+  margin: 2em 0em;
 }
 
 #about .about-content {
@@ -627,10 +626,192 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background: #000;
   min-height: 5vh;
   padding: 1em;
   color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  header {
+    display: none;
+  }
+  .heading {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #home, #brands, #reviews, #process, #cars, #about {
+    padding: 2em 1em;
+  }
+  #home .banner-content h1 {
+    font-size: 1.6em;
+  }
+  #home .banner-content h2 {
+    font-size: 1em;
+  }
+  #home .banner-content a {
+    font-size: 0.8em;
+    padding: 0.3em;
+  }
+  #brands .brand-logos {
+    margin: 2em 0em;
+  }
+  #brands .brand-logos img {
+    max-width: 25%;
+  }
+  #reviews .reviews-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #reviews .reviews-content .lines {
+    margin-right: 0em;
+  }
+  #reviews .reviews-content .lines h1 {
+    font-size: 1.8em;
+  }
+  #reviews .reviews-content .lines p {
+    font-size: 1.2em;
+  }
+  #reviews .reviews-content .factors {
+    margin-top: 2em;
+  }
+  #reviews .reviews-content .factors .factor-01, #reviews .reviews-content .factors .factor-02, #reviews .reviews-content .factors .factor-03 {
+    padding: 0.8em;
+    font-size: 0.8em;
+  }
+  #reviews .cards-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #reviews .cards-wrap .cards {
+    margin: 2em 0em;
+    padding: 0.5em;
+    max-width: 200px;
+    min-height: 230px;
+  }
+  #reviews .cards-wrap .cards p {
+    font-size: 0.8em;
+  }
+  #process .process-content .quality-icons {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #process .process-content .quality-icons .process-image {
+    width: 200px;
+  }
+  #process .process-content .steps {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #process .process-content .steps .step {
+    margin-bottom: 1.5em;
+  }
+  #process .process-content .steps .step h1 {
+    font-size: 0.7em;
+    padding: 0.8em;
+  }
+  #process .process-content .steps .step h2 {
+    font-size: 0.6em;
+    padding: 0.8em;
+  }
+  #cars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #cars .cars-content h1 {
+    font-size: 1.4em;
+    margin: 0em 0em 1em 0em;
+  }
+  #cars .cars-content p {
+    font-size: 0.8em;
+  }
+  #cars .cars-content .car-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 1.5em;
+  }
+  #cars .cars-content .car-buttons a {
+    padding: 0.4em;
+    font-size: 0.8em;
+  }
+  #cars .owl-carousel {
+    max-width: 200px;
+    margin-top: 2em;
+  }
+  #about .heading {
+    margin: 2em 0em;
+  }
+  #about .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about .about-content .about-creative {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #about .about-content .about-creative .process-image {
+    max-width: 60%;
+  }
+  #about .about-content .about-content-text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #about .about-content .about-content-text h2 {
+    font-size: 0.8em;
+  }
+  #about .about-content .about-content-text p {
+    font-size: 0.7em;
+  }
+  #footer p {
+    font-size: 0.8em;
+  }
+  .whatsapp-button, .top-button {
+    font-size: 1.5em;
+  }
+  .whatsapp-button {
+    bottom: 5.4em;
+    right: 1em;
+  }
+  .top-button {
+    bottom: 4em;
+    right: 1em;
+  }
 }
 
 * {
@@ -642,33 +823,49 @@ header .logo {
 }
 
 body {
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3.5em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .whatsapp-button,
+  .top-button {
+    font-size: 3em;
+  }
+  .whatsapp-button {
+    bottom: 2.5em;
+    right: 0.5em;
+  }
+  .top-button {
+    bottom: 1.2em;
+    right: 0.5em;
+  }
 }
 
 .whatsapp-button {
   position: fixed;
   visibility: hidden;
   z-index: 100;
-  bottom: 1em;
-  right: 2em;
-  font-size: 4em;
 }
 
 .whatsapp-button i {
-  color: #07ae5d;
+  color: #f9a826;
 }
 
 .top-button {
   position: fixed;
   visibility: hidden;
   z-index: 100;
-  bottom: 1em;
-  right: 0.5em;
-  font-size: 4em;
   cursor: pointer;
 }
 
 .top-button i {
-  color: #006c38;
+  color: #f9a826;
 }
 /*# sourceMappingURL=main.css.map */
