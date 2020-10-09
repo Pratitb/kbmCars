@@ -29,9 +29,9 @@ header{
         font-size: 1.5em;
         letter-spacing: 0.4em;
         align-items: center;
-        color: #F9A826;
+        color: $gold-color;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 2px #F9A826;
+        -webkit-text-stroke: 2px $gold-color;
     }
     @media(max-width:767px){
         display: none;

@@ -7,38 +7,55 @@
 @import "cars";
 @import "about";
 @import "footer";
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import "responsive";
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
-    font-family: 'Audiowide', cursive;
+body {
+  font-family: "Audiowide", cursive;
 }
-.whatsapp-button{
-    position: fixed;
-    visibility: hidden;
-    z-index: 100;
-    bottom: 1em;
-    right: 2em;
-    font-size: 4em;
+@media (min-width: 768px) {
+  .heading {
+    @include heading();
+  }
 }
-.whatsapp-button i{
-    color: #07ae5d;
-}
-.top-button{
-    position: fixed;
-    visibility: hidden;
-    z-index: 100;
-    bottom: 1em;
+
+@media (min-width: 768px) {
+  .whatsapp-button,
+  .top-button {
+    font-size: 3em;
+  }
+  .whatsapp-button {
+    bottom: 2.5em;
     right: 0.5em;
-    font-size: 4em;
-    cursor: pointer;
+  }
+  .top-button {
+    bottom: 1.2em;
+    right: 0.5em;
+  }
+}
 
-    i{
-        color: #006c38;
-    }
+.whatsapp-button {
+  position: fixed;
+  visibility: hidden;
+  z-index: 100;
+
+  i {
+    color: $gold-color;
+  }
+}
+.top-button {
+  position: fixed;
+  visibility: hidden;
+  z-index: 100;
+  cursor: pointer;
+
+  i {
+    color: $gold-color;
+  }
 }
