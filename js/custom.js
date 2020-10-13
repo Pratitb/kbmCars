@@ -1,7 +1,7 @@
-//write date in footer
+/*write date in footer
 let date = document.querySelector('#date');
 let dateMonth = new Date().toDateString();
-date.innerHTML = dateMonth;
+date.innerHTML = dateMonth;*/
 
 //open external links in new tab
 $("body a[href^='https://']").attr("target", "_blank");
