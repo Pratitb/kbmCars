@@ -1,0 +1,207 @@
+@media(min-width:320px) and (max-width:767px){
+    .mobile-menu-wrap{
+        position: fixed;
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        padding: 0.8em 0.8em;
+        bottom: 8%;
+        border-radius: 5%;
+        z-index: 10000;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.22);
+
+        .mobile-menu{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .buttons{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-right: 0.8em;
+                font-size: 1em;
+                i{
+                    color: $gold-color;
+                }
+                a{
+                    color: $gold-color;
+                    text-decoration: none;
+                    font-size: 0.8em;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    header{
+        display: none;
+    }
+    .heading{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    #home, #brands, #reviews, #process, #cars, #about{
+        padding: $section-mobile-padding;
+    }
+    #home{
+       .banner-content{
+           h1{
+               font-size: 1.6em;
+           }
+           h2{
+               font-size: 1em;
+           }
+           a{
+               font-size: 0.8em;
+               padding: 0.3em;
+           }
+       } 
+    }
+
+    #brands{
+        .brand-logos{
+            margin: 2em 0em;
+            img{
+                max-width: 25%;
+            }
+        }
+    }
+    #reviews{
+        .reviews-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .lines{
+                margin-right: 0em;
+                h1{
+                    font-size: 1.8em;
+                }
+                p{
+                    font-size: 1.2em;
+                }
+            }
+            .factors{
+                margin-top: 2em;
+                .factor-01, .factor-02, .factor-03{
+                    padding: 0.8em;
+                    font-size: 0.8em;
+                }
+            }
+        }
+        .cards-wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .cards{
+                margin: 2em 0em;
+                padding: 0.5em;
+                max-width: 200px;
+                min-height: 230px;
+
+                p{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+    
+    #process{
+        .process-content{
+            .quality-icons{
+                order: 1;
+
+                .process-image{
+                    width: 200px;
+                }
+            }
+            .steps{
+                order: 2;
+                .step{
+                    margin-bottom: 1.5em;
+                    h1{
+                        font-size: 0.7em;
+                        padding: 0.8em;
+                    }
+                    h2{
+                        font-size: 0.6em;
+                        padding: 0.8em;
+                    }
+                }
+            }
+        }
+    }
+    
+    #cars{
+        display: flex;
+        flex-direction: column;
+        .cars-content{
+            h1{
+                font-size: 1.4em;
+                margin: 0em 0em 1em 0em;
+            }
+            p{
+                font-size: 0.8em;
+            }
+            .car-buttons{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 1.5em;
+                a{
+                    padding: 0.4em;
+                    font-size: 0.8em;
+                }
+            }
+        }
+        .owl-carousel{
+            max-width: 200px;
+            margin-top: 2em;
+        }
+    }
+    #about{
+        .heading{
+            margin: 2em 0em;
+        }
+        .about-content{
+            flex-direction: column;
+            .about-creative{
+                order: 1;
+
+                .process-image{
+                    max-width: 60%;
+                }
+            }
+            .about-content-text{
+                order: 2;
+                h2{
+                    font-size: 0.8em;
+                }
+                p{
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+
+    #footer{
+        p{
+            font-size: 0.8em;
+        }
+    }
+    .whatsapp-button, .top-button{
+        font-size: 1.5em;
+    }
+    .whatsapp-button{
+        bottom: 5.4em;
+        right: 1em;
+      }
+      .top-button{
+        bottom: 4em;
+        right: 1em;  
+      }
+}

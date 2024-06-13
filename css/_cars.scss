@@ -1,0 +1,55 @@
+#cars{
+    padding: $section-padding;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .cars-content{
+        max-width: 400px;
+        small{
+            color: $gold-color;
+        }
+        h1{
+            font-size: 4em;
+        }
+        p{
+            letter-spacing: 1px;
+        }
+        .car-buttons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3em;
+            a{
+                text-decoration: none;
+                color: #000;
+                border: 2px solid #000;
+                padding: 0.5em;
+                transition: 0.3s linear;
+
+                &:hover{
+                    color: #fff;
+                    background: #000;
+                }
+            }
+        }
+    }
+
+    .owl-carousel{
+        max-width: 400px;
+        .owl-stage-outer{
+            border-radius: 1em;
+        }
+    
+        .owl-nav [class*="owl-"]{
+            display: none;
+        }
+        .owl-nav [class*="owl-"]:hover{
+            background:rgba(0,0,0,0.1);
+            color: #000;
+        }
+    
+    }
+}

@@ -1,0 +1,43 @@
+#about {
+  padding: $section-padding;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #000;
+  background: #fff;
+
+  h1{
+    margin: 2em 0em;
+  }
+
+  .about-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    .about-content-text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      max-width: 600px;
+      h2 {
+        font-size: 2em;
+        margin: 1em 0;
+      }
+      p {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        letter-spacing: 1px;
+        line-height: 1.3em;
+      }
+    }
+    .about-creative {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+}

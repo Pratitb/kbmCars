@@ -1,0 +1,8 @@
+$section-padding: 5em 5em;
+$section-mobile-padding: 2em 1em;
+$gold-color: #f9a826;
+
+@mixin heading {
+    font-size: 3.5em;
+    text-align: center;
+}

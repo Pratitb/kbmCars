@@ -1,0 +1,66 @@
+@import "variables";
+@import "header";
+@import "banner";
+@import "brands";
+@import "reviews";
+@import "process";
+@import "cars";
+@import "about";
+@import "footer";
+@import "responsive";
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Audiowide", cursive;
+}
+@media(min-width:768px){
+  .mobile-menu-wrap{
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .heading {
+    @include heading();
+  }
+}
+
+@media (min-width: 768px) {
+  .whatsapp-button,
+  .top-button {
+    font-size: 3em;
+  }
+  .whatsapp-button {
+    bottom: 2.5em;
+    right: 0.5em;
+  }
+  .top-button {
+    bottom: 1.2em;
+    right: 0.5em;
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  visibility: hidden;
+  z-index: 100;
+
+  i {
+    color: $gold-color;
+  }
+}
+.top-button {
+  position: fixed;
+  visibility: hidden;
+  z-index: 100;
+  cursor: pointer;
+
+  i {
+    color: $gold-color;
+  }
+}
